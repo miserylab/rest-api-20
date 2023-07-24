@@ -70,7 +70,7 @@ public class UserTests extends BaseTest{
     @Test
     void validateJSONSchema() {
         InputStream createUserJsonSchema = getClass().getClassLoader()
-                .getResourceAsStream ("schema.json");
+                .getResourceAsStream ("schemas/schema.json");
         given()
                 .log().uri()
                 .log().method()
